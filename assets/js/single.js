@@ -25,7 +25,7 @@ var getRepoIssues = function(repoName) {
                     displayIssues(data);
                     // check if api has paginated issues
                 if (response.headers.get("Link")) {
-       cd ..apiUrl             displayWarning(repoName);
+                    displayWarning(repoName);
                 }
             });
         } else {
